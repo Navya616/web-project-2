@@ -1,0 +1,54 @@
+input[type=text], 
+input[type=password],input[type=tel],input[type=date],input[type=radio]{
+ width: 90%;
+ padding: 10px;
+ margin: 5px 70px 5px 0;
+ display: inline-block;
+ border: none;
+ background: #f1f1f1;
+ }
+ input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
+ }
+ .sign{
+ text-align: center;
+ }
+ hr {
+ border:none;
+ margin-bottom: 20px;
+ }
+ /* Set a style for all buttons */
+ button {
+ background-color:aqua;
+ font-size:15px ;
+ color: black;
+ padding: 10px 5px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 30%;
+ opacity: 0.9;
+ }
+ button:hover {
+ opacity:1;
+ }
+ /* Extra styles for the cancel button */
+ 
+ /* Float cancel and signup buttons and add an equal width */
+.form-box{
+ width: 650px;
+ height: 900px;
+ position:relative;
+ top: 10px;
+ left:25%;
+ background: #ADD8E6;
+}
+/* Add padding to container elements */
+.container {
+ margin-left:auto;
+ margin-right:auto;
+ padding: 16px;
+ font-family:sans-serif;
+ position: relative;
+}

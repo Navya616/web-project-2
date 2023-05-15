@@ -1,0 +1,79 @@
+<html>
+<head>
+<title> Flight Search</title>
+<style>
+.box{
+ width: 650px;
+ height: 500px;
+ position: relative;
+ top: 10px;
+ left:25%;
+ margin-top:3%;
+ background:white;
+}
+td{
+padding-left:2em;
+padding-right:1em;
+}
+tr{
+color:grey;
+font-size:25px;
+}
+input{
+background-color:#ADD8E6;
+width:15em;
+height:3.5em;
+border:none;
+}
+select{
+background-color:#ADD8E6;
+width:12em;
+height:3em;
+border:none;
+}
+.gfg{
+border-collapse:separate;
+border-spacing:0 15px;
+}
+.text-center{
+text-align:center;}
+</style>
+</head>
+<body background="clearsky.jpg">
+<div class="box">
+<center><p style="color:#0080FF;font-size:2em;padding:3px;"> Search Flights</p></center>
+<table class="gfg">
+<tbody>
+<tr><td> From
+<td> To</tr>
+<tr><td>
+<select style="color:grey;padding-left:1em;font-size:18px;">
+ <option id="1" value="1" style="color:grey;padding-left:1em;font-size:18px;">visakhapatnam</option>
+<option id="1" value="2" style="color:grey;padding-left:1em;font-size:18px;">Rajahmundry</option>
+ <option id="1" value="3" style="color:grey;padding-left:1em;font-size:18px;">Vijayawada</option>
+ <option id="1" value="4" style="color:grey;padding-left:1em;font-size:18px;">Tirupathi</option>
+ </select>
+<td>
+<select style="color:grey;padding-left:1em;font-size:18px;">
+ <option id="1" value="1" style="color:grey;padding-left:1em;font-size:18px;">visakhapatnam</option>
+ <option id="1" value="2" style="color:grey;padding-left:1em;font-size:18px;">Rajahmundry</option>
+ <option id="1" value="3" style="color:grey;padding-left:1em;font-size:18px;">Vijayawada</option>
+ <option id="1" value="4" style="color:grey;padding-left:1em;font-size:18px;">Tirupathi</option>
+ </select>
+</tr>
+<tr><td>Date Of Journey</tr>
+<tr><td><input type="date" placeholder="date  of journey" min="2022-04-17"></tr>
+<tr><td>Class
+<td>Passengers</tr>
+<tr><td><select style="color:grey;padding-left:1em;font-size:18px;">
+ <option id="1" value="1" style="color:grey;padding-left:1em;font-size:18px;">Economy</option>
+<option id="1" value="2" style="color:grey;padding-left:1em;font-size:18px;">Bussiness</option>
+ <option id="1" value="3" style="color:grey;padding-left:1em;font-size:18px;">First Class</option>
+ </select>
+<td><input type="number" placeholder="0" min="1" max="5" required></tr>
+</tbody>
+</table>
+<div class="text-center"><a href="booking.html"><button type="button" formaction="booking.html" style="background-color:green;color:white;margin:auto;">Search</button></a></div>
+</div>
+</body>
+</html>

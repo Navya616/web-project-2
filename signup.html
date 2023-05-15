@@ -1,0 +1,103 @@
+<html>
+<head>
+ <title>Signup page</title>
+<style>
+body {
+background-image: url('https://th.bing.com/th/id/R.00a604a279ae2c76fae8b82aae2b0bc0?rik=WdnLhGCNmdtplQ&riu=http%3a%2f%2fblog.jammer-store.com%2fwp-content%2fuploads%2f2013%2f04%2fPlane-In-Flight.jpg&ehk=3Yuv6tGqEs%2fjFE1xgugVMYmwBqveSypfibLAfjLDsGg%3d&risl=&pid=ImgRaw&r=0');
+}
+h1 {
+font-size: 45px;
+}
+input[type=text], input[type=password],input[type=tel],input[type=date] {
+ width: 40%;
+ padding: 10px;
+ margin: 5px 0 15px 0;
+ display: inline-block;
+ border: none;
+ background: #f1f1f1;
+ }
+ input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
+ }
+ 
+ hr {
+ border:none;
+ margin-bottom: 20px;
+ }
+ /* Set a style for all buttons */
+ button {
+ background-color:aqua;
+ font-size:15px ;
+ color: black;
+ padding: 10px 5px;
+ margin: 8px 0;
+ border: none;
+ cursor: pointer;
+ width: 30%;
+ opacity: 0.9;
+ }
+ button:hover {
+ opacity:1;
+ }
+ /* Extra styles for the cancel button */
+ .cancelbtn {
+ padding: 10px 5px;
+ background-color:coral;
+ font-size: 15px;;
+ }
+ /* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+float: left;
+}
+.cancelbtn {
+float:right;
+}
+.box{
+ width: 650px;
+ height: 750px;
+ position: relative;
+ top: 10px;
+ left:25%;
+ background:#03a9f4;
+}
+/* Add padding to container elements */
+.container {
+ margin-left:auto;
+ margin-right:auto;
+ padding:3em;
+ font-family:sans-serif;
+ position: relative;
+}
+</style>
+</head>
+<body class="background-image">
+<div class="box">
+<form>
+<div class="container">
+ <h2 style="color:floralwhite" >Sign Up</h2>
+<hr>
+<label for="email"><p style="color:floralwhite"><b>Name</b></p></label>
+<input type="text" placeholder="Enter Full Name" name="name" required>
+<label for="email"><p style="color:floralwhite"><b>Phone number</b></p></label>
+<input type="tel" placeholder="Enter mobile number" name="num" required>
+<label for="email"><p style="color:floralwhite"><b>Date of Birth</b></p></label>
+<input type="date" placeholder="Enter DOB" name="date" required>
+<label for="email"><p style="color:floralwhite"><b>Email</b></p></label>
+<input type="text" placeholder="Enter Email" name="email" required>
+<label for="psw"><p style="color:floralwhite"><b>Password</b></p></label>
+<input type="password" placeholder="Enter Password" required>
+<hr>
+<a href="flightsearch.html"><button type="submit" class="signupbtn"  formaction="flightsearch.html"><b>Sign Up</b></button></a>
+<a href="homepage1.html"><button type="button" class="cancelbtn" onclick="iFunction()" formaction="homepage1.html"><b>Cancel </b></button></a>
+<script>
+function iFunction(){
+ alert("Back to Home Page");
+}
+</script>
+</div>
+</div>
+
+</form>
+</body>
+</html>

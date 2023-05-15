@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Available Tickets</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+.tabled{
+margin-left: auto;
+margin-right: auto;
+} 
+ #container button{
+ color:white;
+ }
+ #container{
+ padding-top: 10px;
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ }
+ #container th{
+ padding-top: 12px;
+ padding-bottom: 12px;
+ background-color:#ffe6ee;
+ font-size: 20px;
+ font-weight: bold;
+ }
+ #container td{
+ background-color: #f0ffff;
+ 
+ }
+ 
+ #container td ,#container th{
+ 
+ padding: 22px;
+ }
+ .btn-default{
+ background-color: white;
+ 
+ border:2px solid #008cba;
+ font-size: 20px;
+ }
+ a{
+ text-decoration: none;
+ }
+ 
+ </style>
+</head>
+<body>
+<div id="container">
+ <h2 style="font-size: 30px; color:darkblue;">Available Flights</h2>
+ 
+ <table class="tabled" border="0">
+ 
+ <tr>
+ <th>Flight No.</th>
+ <th>Flight Name</th>
+ <th>Arrival Time</th>
+ <th>Departure Time</th>
+ <th>Details</th>
+ <th>Price</th>
+ <th> </th>
+ </tr>
+ <tr>
+ <td >12345</td>
+ <td >Air India</td>
+ <td >2:00 AM</td>
+ <td >5:00 AM</td>
+ <td><ul><li>Non Stop</li>
+ <li>Excluding Lunch</li>
+ </ul></td>
+ <td>8000</td>
+ <td><button type="button" class="btn-default" onclick="myFunction()" ><a 
+href="details.html">BOOK</a></button></td>
+ </tr>
+ <tr>
+ <td>23456</td>
+ <td>Indigo</td>
+ <td>7:00 AM</td>
+ <td>11:00 PM</td>
+ <td><ul><li>One Stop</li>
+ <li>Including Lunch</li>
+ </ul></td>
+ <td>6000</td>
+ <td><button type="button" class="btn-default" onclick="myFunction()"><a 
+href="details.html">BOOK</a></button></td>
+ </tr>
+ <tr class="info">
+ <td>34567</td>
+ <td>Spicejet</td>
+ <td>12:00 PM</td>
+ <td>16:30 PM</td> 
+ <td><ul><li>Two Stops</li>
+ <li>Including Lunch</li>
+ </ul></td>
+ <td>4500</td>
+ <td><button type="button" class="btn-default" onclick="myFunction()"><a 
+href="details.html">BOOK</a></button></td>
+ </tr>
+ <tr class="info">
+ <td>45678</td>
+ <td>Kingfisher</td>
+ <td>19:00 PM</td>
+ <td>22:00 PM</td> 
+ <td><ul><li>Non Stop</li>
+ <li>Including Lunch</li>
+ </ul></td>
+ <td>8700</td>
+ <td><button type="button" class="btn-default" onclick="myFunction()"><a 
+href="details.html">BOOK</a></button></td>
+ </tr>
+ </table> 
+</div>
+<script>
+ function myFunction(){
+ alert("Use Delux card and get extra 10% off");
+ }
+</script>
+</body>
+</html>
